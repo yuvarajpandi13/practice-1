@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box{
+    margin: 5rem auto;
+    border: 2px solid;
+    width: 200px;
+    height: 200px;
+    background: gray;
+    border-radius: 50%;
+}
+.box img{
+    width: 200px;
+    height: 200PX;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.box1{
+    margin: 5rem auto;
+    
+    width: 200px;
+    height: 200px;
+    
+}
+.box1 img{
+    width: 200px;
+    height: 200PX;
+    
+    /* border-radius: 50%; */
+    /* /* clip-path: polygon(50% 0%, 0% 100%, 100% 100%); */
+    clip-path: polygon(50% 0%, 4% 100%, 96% 100%);
+    /* clip-path: polygon(59% 0%, 0% 100%, 100% 100%); */
+    /* clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); */
+}
+.box2{
+    margin: 5rem auto;
+    width: 200px;
+    height: 200px;
+    /* background: gray; */
+    /* border-radius: 10%; */
+}
+.box2 img{
+    width: 200px;
+    height: 200PX;
+    object-fit: cover;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+.box3{
+    margin: 5rem auto;
+    width: 200px;
+    height: 200px;
+    /* background: gray; */
+    /* border-radius: 10%; */
+}
+.box3 img{
+    width: 200px;
+    height: 200PX;
+    object-fit: cover;
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+}
+.box4{
+    margin: 5rem auto;
+    width: 200px;
+    height: 200px;
+    /* background: gray; */
+    /* border-radius: 10%; */
+}
+.box4 img{
+    width: 200px;
+    height: 200PX;
+    object-fit: cover;
+    border-radius: 50%;
+    /* clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%); */
+}
+.box5{
+    margin: 5rem auto;
+    width: 200px;
+    height: 200px;
+    /* background: gray; */
+    /* border-radius: 10%; */
+}
+.box5 img{
+    width: 200px;
+    height: 200PX;
+    object-fit: cover;
+    outline-style: dashed;
+    outline-width: 10px;
+    outline-color: rebeccapurple;
+    /* outline-offset: 10rem; */
+    /* border-radius: 50%; */
+    /* clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%); */
+}
