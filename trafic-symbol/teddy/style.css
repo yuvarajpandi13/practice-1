@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;  
+    box-sizing: border-box; 
+}
+.box1{
+    border: 2px solid   ;
+    height: 200px;
+    width: 200px;
+    margin: 10rem auto ; 
+    background-color: rgb(170, 0, 255);
+    clip-path: ellipse(35% 41% at 50% 50%);
+    position: relative;  
+    /* z-index: -1;  */
+}
+.box2{
+    border: 2px solid   ;
+    height: 200px;
+    width: 200px;
+    left: 44px;
+    top: -298px;
+    margin: 10rem auto ; 
+    background-color: rgb(76, 53, 220);
+    clip-path: ellipse(10% 13% at 50% 50%);
+    position: relative; 
+    
+}
+.box3{
+    border: 2px solid   ;
+    height: 200px;
+    width: 200px;
+    right: 44px;
+    top: -658px;
+    margin: 10rem auto ; 
+    background-color: rgb(76, 53, 220);
+    clip-path: ellipse(10% 13% at 50% 50%);
+    position: relative; 
+    
+}
+.box4{
+    border: 2px solid   ;
+    height: 200px;
+    width: 200px;
+    margin: 10rem auto ; 
+    top: -73rem;
+    background-color: rgb(97, 209, 56);
+    clip-path: circle(21.5% at 50% 50%);
+    position: relative;   
+}
