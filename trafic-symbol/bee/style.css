@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box1{
+    border: 2px solid;
+    height: 200px;
+    width: 200px;
+    /* margin: 10rem auto ; */
+    margin-top: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: yellow;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    position: relative;     
+}
+.box2-center{
+    border: 2px solid;
+    height: 200px;
+    width: 200px;
+    /* top: -890px; */
+    margin-top: 0rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: yellow;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    position: relative;     
+}
+.box3{
+    border: 2px solid;
+    height: 200px;
+    width: 200px;
+    /* top: -890px; */
+    margin-top: 0rem;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin: 10rem auto ; */
+    background-color: yellow;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    position: relative;     
+}
+.box4{
+    border: 2px solid;
+    height: 200px;
+    width: 200px;
+    left: 153px;
+    top: -508px;
+    margin: 0rem auto ;
+    background-color: yellow;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    position: relative;  
+}
+ .box5{
+    border: 2px solid;
+    height: 200px;
+    width: 200px;
+    right: 153px;
+    top: -711px;
+    margin: 0rem auto ;
+    background-color: yellow;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    position: relative;  
+}
+ .box6{
+    border: 2px solid;
+    height: 200px;
+    width: 200px;
+    left: 153px;
+    top: -711px;
+    margin: 0rem auto ;
+    background-color: yellow;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    position: relative;     
+}
+.box7{
+    border: 2px solid;
+    height: 200px;
+    width: 200px;
+    top: -914px;
+    right: 153px;
+    margin: 0rem auto ;
+    background-color: yellow;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    position: relative;     
+}
