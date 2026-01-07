@@ -3,6 +3,9 @@
     padding: 0;  
     box-sizing: border-box; 
 }
+.container{
+    border: 2px solid black;
+}
 .box1{
     border: 2px solid   ;
     height: 200px;
@@ -22,8 +25,7 @@
     margin: 10rem auto ; 
     background-color: rgb(76, 53, 220);
     clip-path: ellipse(10% 13% at 50% 50%);
-    position: relative; 
-    
+    position: relative;    
 }
 .box3{
     border: 2px solid   ;
