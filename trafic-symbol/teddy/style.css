@@ -5,47 +5,86 @@
 }
 .container{
     border: 2px solid black;
+    height: 100vh;
+    position: relative;
 }
-.box1{
-    border: 2px solid   ;
-    height: 200px;
-    width: 200px;
-    margin: 10rem auto ; 
-    background-color: rgb(170, 0, 255);
-    clip-path: ellipse(35% 41% at 50% 50%);
-    position: relative;  
-    /* z-index: -1;  */
-}
-.box2{
-    border: 2px solid   ;
-    height: 200px;
-    width: 200px;
-    left: 44px;
-    top: -298px;
-    margin: 10rem auto ; 
-    background-color: rgb(76, 53, 220);
-    clip-path: ellipse(10% 13% at 50% 50%);
-    position: relative;    
-}
-.box3{
-    border: 2px solid   ;
-    height: 200px;
-    width: 200px;
-    right: 44px;
-    top: -658px;
-    margin: 10rem auto ; 
-    background-color: rgb(76, 53, 220);
-    clip-path: ellipse(10% 13% at 50% 50%);
-    position: relative; 
+.face{
+    border: 2px solid blue  ;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    position: absolute ;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%,20%);
     
 }
-.box4{
-    border: 2px solid   ;
-    height: 200px;
-    width: 200px;
-    margin: 10rem auto ; 
-    top: -73rem;
-    background-color: rgb(97, 209, 56);
-    clip-path: circle(21.5% at 50% 50%);
-    position: relative;   
+.face .left-eye{
+        /* border: 2px solid blue  ; */
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: absolute ;
+    left: 25%;
+    right: 75%;
+    /* transform: translate(0px,75px); */
+    top: 32%;
+    background-color: black;
+}
+.face .right-eye{
+        /* border: 2px solid blue  ; */
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    position: absolute ;
+    left: 75%;
+    right: 25%;
+    top: 32%;
+    /* transform: translate(0px,75px); */
+    background-color: black;
+}
+.face .nose{
+        /* border: 2px solid blue  ; */
+    height: 20px;
+    width: 20px;
+    border-radius: 0% 100% 45% 55% / 0% 0% 100% 100%;
+    position: absolute ;
+    left: 50%;
+    right: 50%;
+    top: 50%;
+    background-color: black;
+}
+.face .ears-left{
+    border-left: 2px solid blue  ;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    position: absolute ;
+    left: 0;
+    /* z-index: -1; */
+    /* right: 50%; */
+    /* transform: translate(0px,75px); */
+    /* top: 32%; */
+    /* background-color: black; */
+}
+
+.face .ears-right{
+     border-right: 2px solid rgb(64, 0, 255)  ;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%
+    position: absolute;
+    right: 0;
+}
+.bodys{
+
+    border: 2px solid rgb(255, 0, 0)  ;
+    height: 250px;
+    width: 250px;
+    clip-path: ellipse(36% 45% at 50% 50%);
+    position: absolute ;
+    left: 50%;
+    right: 50%;
+    top: 90%;
+    /* transform: translate(-50%,20%); */
 }
