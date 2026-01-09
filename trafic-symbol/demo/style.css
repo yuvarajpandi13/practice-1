@@ -47,8 +47,18 @@
     position: absolute;
 }
 .bodys video{
-    object-fit: cover;
     width: 100%;
+    object-fit: cover;
+    height: 72vh;
+}
+.shop{
+    width: 100%;
+    height: 60vh;
+    position: absolute;
+}
+.shop img{
+    width: 100%;
+    object-fit: cover;
     height: 72vh;
 }
 .footer{
