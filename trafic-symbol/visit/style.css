@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    border: 2px solid black;
+    position: relative;
+}
+.card{
+    width: 500px;
+    height: 230px;
+    border: 2px solid red;
+    background: #80e0f1;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 15px 4px 20px 4px rgba(0, 0, 0, 0.25);
+}
+.card .left {
+    /* border: 2px solid violet; */
+    position: absolute;
+    width: 35%;
+    height: 100%;
+    background: #ddcd3a;
+    color: #000000;
+    text-align: center;
+}
+.left .logo {   
+    width: 65px;
+    height: 65px;
+    border: 2px solid #e74c3c;
+    border-radius: 25px;
+    position: absolute;
+    top: 28%;
+    left: 32%;
+    /* transform: translateX(-50%, -50%); */
+}
+.logo img{
+    width: 100%;
+    height: 100%;
+    /* position: absolute; */
+    border-radius: inherit;
+    /* transform: translate(); */
+    object-fit: cover;
+    
+}
+
+.company {
+    position: absolute;
+    top: 130px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+}
+.right {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 65%;
+    height: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.right .name {
+    font-size: 22px;
+    font-weight: bold;
+}
+.designation {
+    font-size: 14px;
+    color: #777;
+    margin: 5px;
+}
+.details {
+    position: absolute;
+    /* margin: 20px; */
+    top: 100px;
+    left: 25px;
+    font-size: 13px;
+    color: #9277b2;
+    margin-right: 8px;
+}
+.details .asd{
+    color: rgb(183, 31, 38);
+    padding: 2px;
+}
+.end{
+    position: absolute;
+    right: 0;
+    top: 30px;
+    width: 7px;
+    height: 160px;
+    /* border-radius: 12%; */
+    background: #c50b96;
+}
