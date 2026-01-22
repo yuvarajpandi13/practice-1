@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    /* border: 2px solid red; */
+    position: relative;
+    background-color: #ffffff;
+    background: url(./img/backgroung.jpg) no-repeat;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    /* box-shadow:rebeccapurple -2px 2px 15px 1px; */
+}
+.login{
+    width: 45vh;
+    height: 70vh;
+    position: absolute;
+    /* border: 2px solid blue; */
+    border-radius: 20px;
+    left: 50%;
+    top: 50%;
+    /* text-align: center; */
+    transform: translate(-50%,-50%);
+    background-color:#7cc2f5;
+    color: white;
+    /* box-shadow:rgb(62, 166, 227) -2px 2px 15px 1px; */
+}
+.login h1{
+    /* t    op: 50px; */
+    text-align: center;
+}
+.username{
+    width: 260px;
+    top: 90px;
+    left: 30px;
+    position: absolute;
+}
+.login input{
+    width: 250px;
+    height: 40px;
+    border-top-style: none;    
+    border-left-style: none;
+    border-right-style: none;
+}
+.pwd{
+    width: 260px;
+    top:160px;
+    left: 30px;
+    position: absolute;
+}
+.forget{
+    position: absolute;
+    right: 30px;
+    top: 230px;
+    font-size: 12px;
+    text-decoration: none;
+    /* color: gray; */
+}
+.button{
+    position: absolute;
+    top: 270px;
+    left: 30px;
+    width: 250px;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(to right,#a044ff,#ff4b2b);
+    color: white;
+    font-size: 16px;
+}
+.signup1{
+    position: absolute;
+    top: 330px;
+    left: 100px;
+    /* text-align: center; */
+    font-size: 16px;
+}
+.fb{
+        position: absolute;
+        display: inline-block;
+        top: 380px;
+        left: 100px;
+        color: #edeef1;
+}
+.tw{
+        position: absolute;
+        display: inline-block;
+        top: 380px;
+        left: 140px;
+        color: #f6f8f8;
+}
+.gg{
+        position: absolute;
+        display: inline-block;
+        top: 380px;
+        left: 180px;
+        text-align: center;
+        color: rgb(230, 236, 230);        
+}
+.signup2{
+    position: absolute;
+    top: 420px;
+    left: 130px;
+    text-align: center;
+    font-size: 16px;
+}
+.signup2 p{
+    padding: 18px;
+}
+.signup2 a{
+    text-decoration: none;
+    color: red;
+}
