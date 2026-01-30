@@ -62,9 +62,13 @@ nav a {
   position: absolute;
   top: 50%;
   left: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;
+  align-items: center;
   background: rgba(0,0,0,0.6);
   padding: 30px;
   border-radius: 10px;
@@ -75,83 +79,165 @@ nav a {
   margin-bottom: 10px;
 }
 
-.bg-content button {
-  margin-top: 5px;
+.bg-content a {
+  /* position: absolute; */
+  margin-top: 10px;
+  text-decoration: none;
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* text-align: center; */
+  width: 115px;
+  display: flex;
   padding: 10px 20px;
-  border: none;
+  color: white;
   border-radius: 10px ;
   background: #ff9800;
   font-size: 16px;
   cursor: pointer;
 }
-.cars {
+/* affordabla and luxury */
+.pricing {
   /* border: 2px solid blue; */
-  padding: 50px 40px;
+  /* display: flex; */
+  padding: 60px 20px;
 }
-
-.cars h2 {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.car-container {
-  width: 100%;
-  /* height: 70vh; */
-  display: flex;
+.center {
   /* border: 2px solid red; */
-  justify-content: space-evenly;
-  gap: 10px;
-  flex-wrap: wrap;
+  height: 280px;
+  display: flex;
+  gap: 30px;
+  width: 900px;
+  margin: auto;
 }
-
-.car-details {
-  background: rgba(149, 149, 149, 0.611);
-  width: 300px;
-  /* height: 300px; */
-  border-radius: 15px;
-  overflow: hidden;
+.pr {
+  /* border: 2px solid blue; */
+  flex: 1;
   position: relative;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
-
-.car-details img {
-  width: 100%;
-  height: 170px;
-  object-fit: cover;
-}
-
-.price {
+.pr h2 {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  background: #ff9800;
-  padding: 5px 10px;
-  font-weight: bold;
+  /* display: flex; */
+  font-size: 32px;
+  margin-bottom: 60px;
+  /* color: white; */
 }
-
-.car-info {
-  padding: 15px;
+.pr p {
+  /* display: flex; */
+  font-size: 16px;
+  /* opacity: 0.9; */
 }
-.car-info h3{
+.affordable {
+  background: url("../rentel-car/img/affordable.webp") center/cover no-repeat;
+}
+.luxury {
+  background: url("../rentel-car/img/luxury.avif") center/cover no-repeat;
+}
+.pr:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  color: #ff9800;
+}
+/* why choos us */
+.why-choose-us {
+  /* display: flex; */
+  border: 2px solid red;
+  padding: 70px 20px;
+  background: #f7f7f7;
+}
+.container {
+  border: 2px solid blue;
+  width: 80%;
+  margin: auto;
   text-align: center;
 }
 
-.car-info button {
-  width: 100%;
-  padding: 8px;
-  border: none;
-  background: #111;
-  color: white;
-  cursor: pointer;
-}
-.contact {
-  /* border: 2px blue; */
-  /* width: 80%; */
-  /* height: 10vh; */
-  padding: 7px 50px;
-  background: #f4f4f4;
+.why-choose-us h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
 }
 
-.contact h2 {
+.desc {
+  margin: auto;
+  font-size: 18px;
+  line-height: 2;
+  color: #000000;
+}
+.features {
+  border: 2px solid red;
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+   flex-direction: row;
+    gap: 30px;
+}
+.feature-card {
+  border: 2px solid green;
+  width: 75vh;
+  /* margin: auto; */
+  background: #fff;
+  padding: 35px 20px;
+  border-radius: 18px;
+  flex-wrap: wrap;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+.icon {
+  border: 2px solid red;
+  /* background: #989898; */
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.red { 
+   color: #ff4d4d;
+}
+.green {  
+  color: #2ecc71; 
+}
+.blue {
+  color: #4da6ff; 
+}
+.yellow { 
+   color: #f1c40f; 
+}
+
+.feature-card h3 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+/* end */
+/* contact details */
+.contact {
+  border: 2px blue;
+  /* width: 80%; */
+  height: 50vh;
+  padding: 7px 50px;
+  background: #b4b4b4;
+}
+.contact h2 { 
   text-align: center;
   margin-bottom: 30px;
 }
@@ -176,8 +262,7 @@ nav a {
   gap: 15px;
 }
 
-.contact-form input,
-.contact-form textarea {
+.contact-form input, .contact-form textarea {
   padding: 10px;
   border-radius: 8px;
   border: 1px solid #ccc;
