@@ -65,65 +65,79 @@ nav ul li a:hover{
 }
 
 /* car details */
-.cars {
-  /* border: 2px solid blue; */
-  padding: 50px 40px;
+.car-type-section {
+  padding: 80px 20px;
 }
 
-.cars h2 {
-  text-align: center;
-  margin-bottom: 30px;
+.container {
+  max-width: 1200px;
+  margin: auto;
 }
 
-.car-container {
-  width: 100%;
-  /* height: 70vh; */
+/* TITLE */
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #0b1c4d;
+  margin-bottom: 50px;
+}
+
+.section-title span {
+  color: #4f6cf7;
+}
+
+/* FLEX GRID */
+.car-types {
   display: flex;
-  /* border: 2px solid red; */
-  justify-content: space-evenly;
-  gap: 10px;
   flex-wrap: wrap;
+  gap: 30px;
 }
 
-.car-details {
-  background: rgba(149, 149, 149, 0.611);
-  width: 300px;
-  /* height: 300px; */
-  border-radius: 15px;
-  overflow: hidden;
-  position: relative;
-}
-
-.car-details img {
-  width: 100%;
-  height: 170px;
-  object-fit: cover;
-}
-
-.price {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background: #ff9800;
-  padding: 5px 10px;
-  font-weight: bold;
-}
-
-.car-info {
-  padding: 15px;
-}
-.car-info h3{
+/* CARD */
+.car-card {
+  flex: 1 1 calc(16.66% - 30px); /* 6 per row */
+  min-width: 180px;
+  background: #fff;
+  border-radius: 20px;
+  padding: 25px 20px;
   text-align: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
 }
 
-.car-info button {
-  width: 100%;
-  padding: 8px;
-  border: none;
-  background: #111;
-  color: white;
-  cursor: pointer;
+.car-card:hover {
+  transform: translateY(-6px);
 }
+
+.car-card img {
+  max-width: 120px;
+  border-radius: 10%;
+  margin-bottom: 20px;
+}
+
+.car-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #0b1c4d;
+  margin-bottom: 8px;
+}
+
+.car-card p {
+  font-size: 14px;
+  color: #4f6cf7;
+  margin-bottom: 18px;
+}
+
+/* BLUE LINE */
+.line {
+  display: block;
+  width: 30px;
+  height: 2px;
+  background: #4f6cf7;
+  margin: auto;
+  border-radius: 2px;
+}
+
 /* end */
 footer {
   /* border: 2px solid red; */

@@ -6,45 +6,118 @@
   <link rel="stylesheet" href="book.css">
 </head>
 <body>
-    <header>
+     <header>
     <!-- <h2>Car</h2> -->
      <div class="logo">
-      <a href="./index.html"><img src="../rentel-car/img/logo2.jpg" alt=""></a>
+      <a href="./index.html">Rental Cars</a>
      </div>
     <nav>
       <ul>
         <li><a href="./index.html">Home</a></li>
         <li><a href="#cars">Cars</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">about us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#blog">Blog</a></li>
       </ul>
     </nav>
   </header>
-    <section class="background">
-        <img src="./img/book-bg.webp" alt="">
-  <div class="booking-container">
+    <section class="hero">
+  <div class="booking-wrapper">
+
+    <h2 class="title">Book Your Ride</h2>
+
     <form class="booking-form">
 
-      <div class="input-box">
-        <label>From</label>
-        <input type="text" placeholder="Enter pickup location">
+      <div class="field">
+        <input type="text" placeholder="Pick Up Location">
       </div>
 
-      <div class="input-box">
-        <label>To</label>
-        <input type="text" placeholder="Enter drop location">
-      </div>
-
-      <div class="input-box">
-        <label>Date</label>
+      <div class="field">
         <input type="date">
       </div>
 
-      <div class="button-box">
-        <button type="submit">Search</button>
+      <div class="field">
+        <input type="text" placeholder="Drop Off Location">
       </div>
 
+      <div class="field">
+        <input type="date">
+      </div>
+
+      <div class="field">
+        <select>
+          <option>Car Brands</option>
+          <option>Toyota</option>
+          <option>Honda</option>
+          <option>BMW</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <select>
+          <option>Choose Car Model</option>
+          <option>Sedan</option>
+          <option>SUV</option>
+          <option>Luxury</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <select>
+          <option>Traveler</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3+</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <select>
+          <option>Driver Age</option>
+          <option>18-25</option>
+          <option>26-40</option>
+          <option>40+</option>
+        </select>
+      </div>
+      <a href="./payment.html">Book Car</a>
+      <!-- <button class="book-btn">Book Car →</button> -->
+
     </form>
-  </div></section>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+
+  <div class="feature-card">
+    <div class="icon">🚗</div>
+    <h3>More Easy Booking Process</h3>
+    <p>
+      It is long established fact that reader will be distracted by the readable content layout.
+    </p>
+    <span class="num">01</span>
+  </div>
+
+  <div class="feature-card">
+    <div class="icon">🚙</div>
+    <h3>Wide Selection Of Top Quality Cars</h3>
+    <p>
+      It is long established fact that reader will be distracted by the readable content layout.
+    </p>
+    <span class="num">02</span>
+  </div>
+
+  <div class="feature-card">
+    <div class="icon">💭</div>
+    <h3>24/7 Online Customers Support</h3>
+    <p>
+      It is long established fact that reader will be distracted by the readable content layout.
+    </p>
+    <span class="num">03</span>
+  </div>
+
+</section>
 
   <footer>
     <p>@2026 Car Rentals |All Rights Reserved</p>
