@@ -20,7 +20,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* position: sticky; */
+  position: sticky;
+  z-index: 9999;
   top: 0;
 }
 .logo{
@@ -94,6 +95,9 @@ nav ul li a:hover{
   flex-direction: column;
   transform: translateY(-10px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+.card:hover {
+  transform: translateY(-6px);
 }
 .top {
   display: flex;

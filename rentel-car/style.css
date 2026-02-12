@@ -17,6 +17,8 @@ header {
   background: #111;
   color: #fff;
   padding: 15px 40px;
+  position: sticky;
+  z-index: 9999;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -169,7 +171,7 @@ nav ul li a:hover{
 .why-choose-us {
   /* display: flex; */
   /* border: 2px solid red; */
-  padding: 70px 20px;
+  /* padding: 70px 20px; */
   background: #f7f7f7;
 }
 .container {
@@ -405,7 +407,7 @@ video {
 
 .footer-container {
   width: 90%;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: auto;
   display: grid;
   display: flex;
@@ -482,5 +484,167 @@ video {
 
 .footer-bottom span {
   color: red;
+}
+/* tab */
+@media (max-width: 992px) {
+
+  header {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .center {
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .features {
+    flex-wrap: wrap;
+  }
+
+  .feature-card {
+    max-width: 45%;
+  }
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+}
+/* tab */
+@media (min-width: 768px) and (max-width: 1024px) {
+header {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+nav ul {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+.bg-content h1 {
+    font-size: 36px;
+  }
+.booking-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+.field {
+    width: 100%;
+  }
+.features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+.feature-card {
+    max-width: 100%;
+  }
+.center {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  .pr {
+    width: 45%;
+  }
+.about-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+.contact-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+}
+/* Mobile Devices */
+@media (max-width: 768px) {
+
+  header {
+    padding: 15px;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .bg-content h1 {
+    font-size: 28px;
+  }
+  .booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .features {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .feature-card {
+    max-width: 100%;
+  }
+  .center {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .pr {
+    height: 200px;
+  }
+  .about-container {
+    gap: 20px;
+  }
+  .contact {
+    height: auto;
+    padding: 20px;
+  }
+  .contact-container {
+    gap: 20px;
+  }
+  .footer-container {
+    gap: 20px;
+  }
+}
+/* Mobile Devices */
+@media (max-width: 480px) {
+  .bg-content {
+    padding: 15px;
+  }
+  .bg-content h1 {
+    font-size: 22px;
+  }
+  .booking-wrapper {
+    padding: 20px;
+  }
+  .field input, .field select {
+    width: 100%;
+  }
+  .pr h2 {
+    font-size: 20px;
+  }
+  .subtitle {
+    font-size: 22px;
+  }
 }
 
