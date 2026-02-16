@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FAQ - Car Booking</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .faq-item {
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+        }
+        .faq-question {
+            cursor: pointer;
+            font-weight: bold;
+            position: relative;
+        }
+        .faq-question::after {
+            content: '+';
+            position: absolute;
+            right: 0;
+        }
+        .faq-answer {
+            display: none;
+            margin-top: 10px;
+            color: #555;
+        }
+        .active .faq-answer {
+            display: block;
+        }
+    
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Frequently Asked Questions (FAQ)</h1>
+
+    <div class="faq-item">
+        <div class="faq-question">1. How can I book a car?</div>
+        <div class="faq-answer">
+            You can book a car through our website by selecting your preferred vehicle, choosing the dates, and completing the payment process.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">2. What documents are required for booking?</div>
+        <div class="faq-answer">
+            A valid driving license and a government-issued ID are required at the time of pickup.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">3. Can I cancel my booking?</div>
+        <div class="faq-answer">
+            Yes, you can cancel your booking as per our cancellation policy. Refund eligibility depends on the cancellation time.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">4. Is insurance included in the rental?</div>
+        <div class="faq-answer">
+            Basic insurance coverage is included. Additional coverage options may be available at extra cost.
+        </div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-question">5. What happens if the car breaks down?</div>
+        <div class="faq-answer">
+            In case of a breakdown, contact our support team immediately. We will provide assistance or a replacement vehicle if required.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
