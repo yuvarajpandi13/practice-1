@@ -31,7 +31,7 @@ header {
   /* font-weight: bold; */
   /* align-items: center; */
   /* text-align: center; */
-  /* height: 30px; */
+
 }
 
 .logo img{
@@ -41,7 +41,7 @@ header {
   height: 100%;
   width: 100%;
   object-fit: cover;
-}
+} 
 /* .logo{
   border: 2px solid blue;
   width: 90px;
