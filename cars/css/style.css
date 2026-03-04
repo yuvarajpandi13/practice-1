@@ -109,7 +109,7 @@ img {
 .home-section {
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-        url(./img/photo-1502877338535-766e1452684a.jpg);
+        url(../img/photo-1502877338535-766e1452684a.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -312,6 +312,7 @@ img {
    /* CONTACT SECTION */
 .contact-section {
     padding: 100px 0;
+    background: #f8f9fa;    
 }
 
 .contact-container {
@@ -381,7 +382,11 @@ img {
  /* VIDEO SECTION */
 .video-section {
     padding: 80px 0;
+    /* color: #004aad; */
     background: #ffffff;
+}
+.video-section h2{
+    color: #004aad;
 }
 
 .video-wrapper {
