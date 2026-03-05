@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="sum">0</h2>
+    <!-- <input type="number" id="inc-value"> -->
+    <button onclick="inc()">increament</button>
+    <button onclick="dec()">Decrement</button>
+    <button onclick="Reset()">Reset</button>
+    <script>
+        let a=0
+            let sum=document.getElementById("sum")
+        function inc(){
+            if(sum.innerText<=20){
+            sum.innerText=a++}
+        }
+        function dec(){
+            if(sum.innerText>0){
+            sum.innerText=a--}
+        }
+        function Reset(){
+            sum.innerText=0
+        }
+    </script>
+</body>
+</html>
