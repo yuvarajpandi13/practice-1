@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let str="DCAsdf@#12"
+        function count(str){
+            let up=0;
+            let lo=0;
+            let sp=0;
+            let nu=0;
+            let i;
+            for(i=0;i<=str.length;i++)
+            {
+                if(str[i]>="A"&& str[i]<="Z")
+                up=up+1;
+            else if(str[i]>="a"&& str[i]<="z")
+                lo=lo+1;
+            else if(str[i]>="0"&& str[i]<="9")
+                nu=nu+1;
+            else
+                sp=sp+1;
+            }
+            console.log("upper",up);
+            console.log("lower",lo);
+            console.log("number",nu);
+            console.log("special",sp);
+            
+
+        }
+
+    </script>
+
+
+</body>
+</html>
