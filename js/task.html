@@ -10,13 +10,14 @@
      <input type="color" id="color-name2">
     <button onclick="gradient()">go</button>
     <script>
+        // debugger;
         function gradient(){
-        let col1 = document.getElementById("color-name1").value;
-        let col2 = document.getElementById("color-name2").value;
+        let col1 = document.getElementById("color-name1");
+        let col2 = document.getElementById("color-name2");
+            
+        console.log(col1.value, col2.value);
 
-        console.log(col1, col2);
-
-        document.body.style.backgroundImage = "linear-gradient(to top, " + col1 + ", " + col2 + ")";
+        document.body.style.backgroundImage = "linear-gradient(to right, " + col1.value + ", " + col2.value + ")";
     }
     
             //   let setgradient=()=>{

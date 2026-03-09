@@ -100,17 +100,17 @@ img {
   /* z-index: 99999; */
   /* position: relative; */
   /* /* background: #f2f2f2; */
-  padding: 90px 40px 60px 40px;
+  padding: 90px 50px 60px 50px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   gap: 30px; 
 }
 
 /* CARD */
 .car-card {
   position: relative;
-  /* width: 50  vh; */
-  height: 62vh;
+  /* width: 55vh; */
+  height: 55vh;
   overflow: hidden;
   background: #fff;
   border-radius: 8px;
