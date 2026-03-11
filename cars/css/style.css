@@ -22,9 +22,9 @@
     box-sizing: border-box;
 }
 
-/* html {
+html {
     scroll-behavior: smooth;
-} */
+}
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -424,7 +424,29 @@ img {
     text-align:center;
     position:relative;
     box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
 }
+.testimonial-card:hover .quote-icon {
+    background: #3a4646;
+    color: #003380;
+}
+
+.small-box{
+     
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    border-radius: 50%;
+    background: rgba(2, 27, 58, 0.229);
+    transition: 1s;
+    
+}
+.testimonial-card:hover .small-box{
+    transform: scale(15,15);
+}
+
 
 .quote-icon{
     width:60px;

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rental - Premium Car Rentals</title>
+
+     <link rel="stylesheet" href="../css/booking.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="./index.html">Rentel<span>Car</span></a>
+
+            </div>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+            <a href="#contact" class="btn-book">Book Now</a>
+        </nav>
+    </header>
+
+    <!-- BOOKING SECTION -->
+    <section class="booking-section">
+
+        <div class="container">
+
+            <h2>Book Your Car</h2>
+            <p>Select your car and travel details</p>
+
+            <form class="booking-form">
+
+                <!-- Row 1 -->
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" placeholder="Enter your email" required>
+                    </div>
+
+                </div>
+
+
+                <!-- Row 2 -->
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label>Phone</label>
+                        <input type="tel" placeholder="Phone number">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Select Car</label>
+                        <select>
+
+                            <option>Economy Car</option>
+                            <option>Luxury Car</option>
+                            <option>SUV</option>
+                            <option>Electric Vehicle</option>
+                            <option>Van</option>
+
+                        </select>
+                    </div>
+
+                </div>
+
+
+                <!-- Row 3 -->
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label>Pickup Date</label>
+                        <input type="date">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Return Date</label>
+                        <input type="date">
+                    </div>
+
+                </div>
+
+
+                <!-- Location -->
+                <div class="form-group">
+
+                    <label>Pickup Location</label>
+                    <input type="text" placeholder="Enter pickup location">
+
+                </div>
+
+
+                <!-- Message -->
+                <div class="form-group">
+
+                    <label>Additional Message</label>
+                    <textarea rows="4"></textarea>
+
+                </div>
+
+
+                <!-- Button -->
+                <button type="submit" class="btn-booking">
+                    Book Now
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+ <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <h2>Rental<span>Car</span></h2>
+                    </div>
+                    <p>Your trusted partner for premium car rental services. We provide quality vehicles at competitive prices.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">Economy Cars</a></li>
+                        <li><a href="#">Luxury Rentals</a></li>
+                        <li><a href="#">SUVs & 4x4</a></li>
+                        <li><a href="#">Van Rentals</a></li>
+                        <li><a href="#">Electric Vehicles</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for the latest offers and updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email Address">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 DriveFast. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

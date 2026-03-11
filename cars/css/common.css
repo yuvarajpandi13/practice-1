@@ -4,9 +4,9 @@
     box-sizing: border-box;
 }
 
-/* html {
+html {
     scroll-behavior: smooth;
-} */
+}
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -110,7 +110,7 @@ img {
 .car-card {
   position: relative;
   /* width: 55vh; */
-  height: 55vh;
+  /* height: 55vh; */
   overflow: hidden;
   background: #fff;
   border-radius: 8px;
@@ -193,7 +193,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 12px 12px;
+  gap: 12px 10px;
   font-size: 14px;
   color: #777;
   margin-bottom: 10px;
