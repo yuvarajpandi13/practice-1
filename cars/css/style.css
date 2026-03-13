@@ -424,14 +424,14 @@ img {
     text-align:center;
     position:relative;
     box-shadow:0 5px 15px rgba(0,0,0,0.1);
-    overflow: hidden;
+    /* overflow: hidden; */
 }
-.testimonial-card:hover .quote-icon {
+/* .testimonial-card:hover .quote-icon {
     background: #3a4646;
     color: #003380;
-}
+} */
 
-.small-box{
+/* .small-box{
      
     width: 70px;
     height: 70px;
@@ -441,10 +441,14 @@ img {
     border-radius: 50%;
     background: rgba(2, 27, 58, 0.229);
     transition: 1s;
+    /* overflow: hidden; */
     
-}
-.testimonial-card:hover .small-box{
-    transform: scale(15,15);
+/* } */
+.testimonial-card:hover{
+    /* transform: scale(15,15); */
+     transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transition: .5s;
 }
 
 
