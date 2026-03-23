@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+
+<div class="signup-container">
+    <h2>Create Account</h2>
+
+    <form>
+        <div class="input-group">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" placeholder="Enter your full name" required>
+        </div>
+
+        <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="input-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Choose a username" required>
+        </div>
+
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Create a password" required>
+        </div>
+
+        <div class="input-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
+        </div>
+
+        <button type="submit">Sign Up</button>
+
+        <p class="login-text">
+            Already have an account? <a href="index.html">Login</a>
+        </p>
+    </form>
+</div>
+
+<script>
+function validateForm() {
+
+    let fullname = document.getElementById("fullname").value.trim();
+    let email = document.getElementById("email").value.trim();
+    let username = document.getElementById("username").value.trim();
+    let password = document.getElementById("password").value.trim();
+    let confirmPassword = document.getElementById("confirmPassword").value.trim();
+
+    let nameError = document.getElementById("nameError");
+    let emailError = document.getElementById("emailError");
+    let usernameError = document.getElementById("usernameError");
+    let passwordError = document.getElementById("passwordError");
+    let confirmError = document.getElementById("confirmError");
+
+    // Clear previous errors
+    nameError.textContent = "";
+    emailError.textContent = "";
+    usernameError.textContent = "";
+    passwordError.textContent = "";
+    confirmError.textContent = "";
+
+    let isValid = true;
+
+    // Full Name
+    if (fullname === "") {
+        nameError.textContent = "Full name is required";
+        isValid = false;
+    }
+
+    // Email
+    let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+    if (email === "") {
+        emailError.textContent = "Email is required";
+        isValid = false;
+    } else if (!email.match(emailPattern)) {
+        emailError.textContent = "Enter valid email";
+        isValid = false;
+    }
+
+    // Username
+    if (username === "") {
+        usernameError.textContent = "Username is required";
+        isValid = false;
+    } else if (username.length < 3) {
+        usernameError.textContent = "Minimum 3 characters";
+        isValid = false;
+    }
+
+    // Password
+    if (password === "") {
+        passwordError.textContent = "Password is required";
+        isValid = false;
+    } else if (password.length < 6) {
+        passwordError.textContent = "Minimum 6 characters";
+        isValid = false;
+    }
+
+    // Confirm Password
+    if (confirmPassword === "") {
+        confirmError.textContent = "Confirm your password";
+        isValid = false;
+    } else if (password !== confirmPassword) {
+        confirmError.textContent = "Passwords do not match";
+        isValid = false;
+    }
+
+    // If valid → allow submit
+    return isValid;
+}
+</script>
+
+</body>
+</html>

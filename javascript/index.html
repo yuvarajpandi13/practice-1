@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="login-container">
+    <h2>Login</h2>
+    <form>
+        <div class="input-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter your username" required>
+        </div>
+
+        <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+        </div>
+
+        <button type="submit">Login</button>
+
+        <p class="signup-text">
+            Don't have an account? <a href="./signup.html">Sign up</a>
+        </p>
+    </form>
+</div>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(e) {
+        e.preventDefault();
+
+         let username = document.getElementById("username").value;
+         let password = document.getElementById("password").value;
+
+         let usernameError = document.getElementById("usernameError");
+         let passwordError = document.getElementById("passwordError");
+
+         usernameError.textContent = "";
+         passwordError.textContent = "";
+
+        let isValid = true;
+        if (username === "") {
+            usernameError.textContent = "Username is required";
+                isValid = false;
+        } else if (username.length < 3) {
+            usernameError.textContent = "Minimum 3 characters required";
+                isValid = false;
+        }
+
+
+        if (password === "") {
+            passwordError.textContent = "Password is required";
+                isValid = false;
+        } else if (password.length < 6) {
+            passwordError.textContent = "Minimum 6 characters required";
+                isValid = false;
+        }
+
+        if (isValid) {
+            alert("Login successful!");
+            }
+        });
+    </script>
+</body>
+</html>
