@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profit & Expense Tracker</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<h2>Profit & Expense Tracker</h2>
+
+<div>
+    <form id="audit-form">
+        <input type="hidden" id="entryId">
+
+        <select id="type">
+            <option value="">Select Type</option>
+            <option value="profit">Profit</option>
+            <option value="expense">Expense</option>
+        </select><br><br>
+
+        <input type="text" id="description" placeholder="Description"><span id="descErr"></span><br><br>
+        <input type="number" id="amount" placeholder="Amount"><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Sno</th>
+            <th>Type</th>
+            <th>Description</th>
+            <th>Amount</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody id="audit-data">
+        <tr>
+            <td colspan="5">No Records Found</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="3"><strong>Total Profit:</strong></td>
+            <td id="total-profit">0</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3"><strong>Total Expense:</strong></td>
+            <td id="total-expense">0</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="3"><strong>Net Profit:</strong></td>
+            <td id="net-profit">0</td>
+            <td></td>
+        </tr>
+    </tfoot>
+</table>
+
+<script>
+let auditEntries = [];
+
+const form = document.getElementById("audit-form");
+
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const entryId = document.getElementById("entryId").value;
+    const type = document.getElementById("type").value;
+    const description = document.getElementById("description").value.trim();
+    const amount = Number(document.getElementById("amount").value);
+    const descErr = document.getElementById("descErr");
+
+    if (description === "") {
+        descErr.innerText = "Description cannot be empty";
+        return;
+    } else {
+        descErr.innerText = "";
+    }
+
+    if (!type) {
+        alert("Please select type");
+        return;
+    }
+
+    if (!amount || amount <= 0) {
+        alert("Please enter a valid amount");
+        return;
+    }
+
+    const entry = { type, description, amount };
+
+    if (entryId === "") {
+        auditEntries.push(entry);
+        alert("Added Successfully");
+    } else {
+        auditEntries[entryId] = entry;
+        alert("Updated Successfully");
+    }
+
+    localStorage.setItem("audit", JSON.stringify(auditEntries));
+    form.reset();
+    document.getElementById("entryId").value = "";
+    loadData();
+});
+
+function getLocalStorage(key) {
+    return JSON.parse(localStorage.getItem(key)) || [];
+}
+
+function loadData() {
+    auditEntries = getLocalStorage("audit");
+    let trow = "";
+    let totalProfit = 0;
+    let totalExpense = 0;
+
+    if (auditEntries.length > 0) {
+        auditEntries.forEach((entry, idx) => {
+            trow += `<tr>
+                        <td>${idx + 1}</td>
+                        <td>${entry.type}</td>
+                        <td>${entry.description}</td>
+                        <td>${entry.amount}</td>
+                        <td>
+                            <button onclick="editEntry(${idx})">Edit</button>
+                            <button onclick="deleteEntry(${idx})">Delete</button>
+                        </td>
+                    </tr>`;
+
+            if (entry.type === "profit") totalProfit += entry.amount;
+            if (entry.type === "expense") totalExpense += entry.amount;
+        });
+    } else {
+        trow = `<tr><td colspan="5">No Records Found</td></tr>`;
+    }
+
+    document.getElementById("audit-data").innerHTML = trow;
+    document.getElementById("total-profit").innerText = totalProfit;
+    document.getElementById("total-expense").innerText = totalExpense;
+    document.getElementById("net-profit").innerText = totalProfit - totalExpense;
+}
+
+function deleteEntry(idx) {
+    auditEntries = getLocalStorage("audit").filter((_, index) => index !== idx);
+    localStorage.setItem("audit", JSON.stringify(auditEntries));
+    loadData();
+}
+
+function editEntry(idx) {
+    const entry = getLocalStorage("audit")[idx];
+    document.getElementById("type").value = entry.type;
+    document.getElementById("description").value = entry.description;
+    document.getElementById("amount").value = entry.amount;
+    document.getElementById("entryId").value = idx;
+}
+
+loadData();
+</script>
+
+</body>
+</html>
