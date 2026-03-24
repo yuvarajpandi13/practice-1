@@ -92,7 +92,10 @@ form.addEventListener("submit", (e) => {
         return;
     }
 
-    const entry = { type, description, amount };
+    const entry = { 
+        type,
+        description, 
+        amount };
 
     if (entryId === "") {
         auditEntries.push(entry);
