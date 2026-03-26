@@ -159,11 +159,19 @@ padding:30px;
 background:#f8f9fa;
 border-radius:8px;
 }
+.mission-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transition: 0.5s;
+}
 
 .mission-card i{
 font-size:35px;
 color:#004aad;
 margin-bottom:15px;
+}
+.mission-card:hover i{
+    color:#ff6600;
 }
 
 /* WHY */

@@ -92,7 +92,11 @@ img {
 }
 
 .nav-links a:hover {
+    /* text-decoration: underline; */
+    /* background-size: 100% 2px; */
     color: #004aad;
+    /* border-bottom: 2px solid transparent; */
+
 }
 
 .btn-book {
@@ -155,7 +159,15 @@ img {
     text-align: center;
     margin-bottom: 50px;
 }
-
+.section-title h2{
+    color: #004aad;
+    font-size: 32px;
+}
+.section-title p{
+    
+    font-weight: bold;
+    font-size: 20px;
+}
 .about-content h3 {
     margin-bottom: 15px;
 }
@@ -163,6 +175,7 @@ img {
 .about-content p {
     margin-bottom: 15px;
     color: #666666;
+    
 }
 
 .about-features li {
@@ -236,10 +249,11 @@ img {
 .map-section {
     padding: 60px 0;
     background: #f8f9fa;
+    /* width: 1600px; */
 }
 
 .map-wrapper {
-    width: 1600px;
+    width: 100%;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -271,7 +285,7 @@ img {
 
 .blog-section {
     padding: 100px 0;
-    background: #f8f9fa;
+    background: white;
 }
 
 .blog-grid {
@@ -312,7 +326,8 @@ img {
    /* CONTACT SECTION */
 .contact-section {
     padding: 100px 0;
-    background: #f8f9fa;    
+    background: #f8f9fa;
+
 }
 
 .contact-container {
@@ -380,7 +395,9 @@ img {
 
 .testimonials-section{
     padding:100px 0;
-    background:#ffffff;
+    /* background:#ffffff; */
+    background: #f8f9fa;
+
 }
 
 .testimonial-header{
@@ -418,7 +435,7 @@ img {
 }
 
 .testimonial-card{
-    background:#f8f9fa;
+    background:white;
     padding:40px 30px;
     border-radius:10px;
     text-align:center;
@@ -504,21 +521,29 @@ img {
 .video-section {
     padding: 80px 0;
     /* color: #004aad; */
-    background: #ffffff;
+    /* background: #f8f9fa; */
+    background: white;
+}
+.vcontainer {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 .video-section h2{
     color: #004aad;
 }
 
 .video-wrapper {
-    max-width: 1200px;
+    max-width: 100%;
+    /* height: 10vh; */
     margin: 0 auto;
     padding: 0 20px;
 }
 
 .video-container {
     position: relative;
-    padding-bottom: 56%; 
+    width: 100%;
+    padding-bottom: 36%; 
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
