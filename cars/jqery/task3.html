@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>sample</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+<p id="one">welcome</p>
+<button id="two">click me</button>
+
+<script>
+$(document).ready(function() {
+
+    // $("#two").keyup(function()
+    // $("#two").keydown(function()
+    $("#two").keypress(function()
+     {
+        $("#one").text("key value");
+    });
+
+});
+</script>
+
+</body>
+</html>

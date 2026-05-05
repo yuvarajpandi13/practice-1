@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>sample</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+<p id="one">welcome</p>
+<button id="two">click me</button>
+
+<script>
+$(document).ready(function() {
+
+    $("#two").click(function()
+     {
+        // $("#one").hide();
+        // $("#one").toggle(1000);
+        // $("#one").slideUp();
+        $("#one").slideToggle();
+    });
+
+});
+</script>
+
+</body>
+</html>
